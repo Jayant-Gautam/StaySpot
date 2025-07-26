@@ -21,6 +21,10 @@ StaySpot is a full-stack web application for listing, discovering, and reviewing
 - **Validation:** Joi
 - **Session & Flash:** express-session, connect-flash
 
+### 🏷️ Tags
+
+`nodejs` `express` `mongodb` `mongoose` `ejs` `cloudinary` `bootstrap` `fullstack` `render` `webapp` `authentication` `mvc` `session-deployment`
+
 ## Getting Started
 
 ### Prerequisites
