@@ -1,6 +1,6 @@
-// if(process.env.NODE_ENV != 'production' ){
-//     require('dotenv').config()
-// }
+if(process.env.NODE_ENV != 'production' ){
+    require('dotenv').config()
+}
 
 const express = require("express");
 const app = express();
@@ -66,7 +66,8 @@ app.engine("ejs", ejsMate);
 
 
 // Connecting to data base
-const MONGO_URL = "mongodb://127.0.0.1:27017/StaySpot";
+const MONGO_URL = process.env.MONGO_URL;
+console.log("Connecting to database at: ", MONGO_URL);
 async function main(){
     await mongoose.connect(MONGO_URL);
 }
