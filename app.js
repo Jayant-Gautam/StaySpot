@@ -19,7 +19,7 @@ const User = require("./models/user.js");
 
 // home route
 app.get("/", (req,res)=>{
-    res.send("request recieved");
+    res.redirect("/listings");
 });
 
 // for session
