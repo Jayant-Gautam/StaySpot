@@ -24,7 +24,7 @@ app.get("/", (req,res)=>{
 
 // for session
 const sessionOptions = {
-    secret : "secretCode",
+    secret : process.env.SEC,
     resave : false,
     saveUninitialized : true,
     cookie : {
@@ -77,7 +77,7 @@ main().then(()=>{
 });
 
 // establishing port connection
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.use(express.urlencoded({extended : true}));
 app.listen(port, ()=>{
     console.log("listening to port : ", port);
